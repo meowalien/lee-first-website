@@ -1,42 +1,113 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>李一工程有限公司</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>李一工程有限公司</h1>
-    <p>您的專業工程服務夥伴</p>
-  </header>
 
-  <section class="about">
+  <!-- 導航列 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">李一工程</a>
+      <ul class="nav-links">
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#services">服務項目</a></li>
+        <li><a href="#contact">聯絡我們</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero 區塊 -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>李一工程有限公司</h1>
+      <p>您的專業工程服務夥伴，打造高效潔淨環境</p>
+      <a href="#contact" class="btn">立即聯絡</a>
+    </div>
+  </section>
+
+  <!-- 關於我們 -->
+  <section id="about" class="about container">
     <h2>關於我們</h2>
-    <p>李一工程有限公司致力於提供高品質的機電整合服務，從空調系統、配管保溫到資訊服務，為客戶打造高效、潔淨、安全的工程環境。</p>
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="https://source.unsplash.com/collection/190727/600x400" alt="公司實景">
+      </div>
+      <div class="about-text">
+        <p>李一工程有限公司自成立以來，專注於機電系統整合與施工，我們擁有豐富的專案經驗及專業團隊，致力於：</p>
+        <ul>
+          <li>提供高品質、安全可靠的配管保溫解決方案</li>
+          <li>設計並安裝最適化的空調系統</li>
+          <li>系統工程整合，提升建築效能</li>
+          <li>無塵室規劃與施工，達成最高潔淨度標準</li>
+          <li>資訊服務整合，強化智慧化管理</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section class="services">
+  <!-- 服務項目 -->
+  <section id="services" class="services container">
     <h2>服務項目</h2>
-    <ul>
-      <li>配管保溫</li>
-      <li>空調工程</li>
-      <li>系統工程</li>
-      <li>無塵室設計與施工</li>
-      <li>資訊服務整合</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://source.unsplash.com/featured/?insulation" alt="配管保溫">
+        <h3>配管保溫</h3>
+        <p>從材料選型到現場施工，確保熱能損耗最低化。</p>
+      </div>
+      <div class="service-card">
+        <img src="https://source.unsplash.com/featured/?airconditioning" alt="空調系統">
+        <h3>空調系統</h3>
+        <p>量身打造冷熱源管理，提升使用舒適度與效率。</p>
+      </div>
+      <div class="service-card">
+        <img src="https://source.unsplash.com/featured/?engineering" alt="系統工程">
+        <h3>系統工程</h3>
+        <p>整合機電、水電與自動化系統，優化建築效能。</p>
+      </div>
+      <div class="service-card">
+        <img src="https://source.unsplash.com/featured/?cleanroom" alt="無塵室">
+        <h3>無塵室</h3>
+        <p>依照 GMP/ISO 標準設計施工，維持穩定潔淨度。</p>
+      </div>
+      <div class="service-card">
+        <img src="https://source.unsplash.com/featured/?itservice" alt="資訊服務">
+        <h3>資訊服務</h3>
+        <p>提供網路架構、監控與系統維運，打造智慧工廠。</p>
+      </div>
+    </div>
   </section>
 
-  <section class="contact">
+  <!-- 聯絡我們 -->
+  <section id="contact" class="contact container">
     <h2>聯絡我們</h2>
-    <p>電話：<a href="tel:02-12345678">02-12345678</a></p>
-    <p>信箱：<a href="mailto:info@lee-first.com.tw">info@lee-first.com.tw</a></p>
-    <p>地址：台北市中正區仁愛路一段100號</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>電話：<a href="tel:02-12345678">02-1234-5678</a></p>
+        <p>信箱：<a href="mailto:info@lee-first.com.tw">info@lee-first.com.tw</a></p>
+        <p>地址：台北市中正區仁愛路一段100號</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="姓名" required>
+        <input type="email" placeholder="電子郵件" required>
+        <textarea placeholder="您的需求訊息..." required></textarea>
+        <button type="submit" class="btn">送出訊息</button>
+      </form>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 李一工程有限公司. All rights reserved.</p>
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 李一工程有限公司. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
